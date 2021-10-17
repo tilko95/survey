@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="container">
+    <div class="title">
+    <h1 id="title">Survey form for Tennis Academy</h1>
+    <p id="description">Please take your time and fill in your information. Thank you for your cooperation.</p>
+    </div>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label> 
+                <input placeholder="Type in your name" class="form-control" type="text" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="E-mail">E-mail</label> 
+                <input placeholder="Type in your E-mail" class="form-control" type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label id="phone-label" for="phone">Type in your phone number</label> 
+                <input placeholder="Your phone number" class="form-control" type="email" name="phone" id="phone" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="age">Select your age</label> 
+                <input class="form-control" type="number" placeholder="age" name="age" id="number" min="1" max="99" required>
+        </div>
+        <div class="form-group">
+            <p>What do you think about our coaches at the Tennis Academy?</p>
+            <label>
+                <input
+                  name="user-recommend"
+                  value="definitely"
+                  type="checkbox"
+                  class="input-radio"
+                  checked
+                />Definitely</label
+              >
+              <label>
+                <input
+                  name="user-recommend"
+                  value="maybe"
+                  type="checkbox"
+                  class="input-radio"
+                />Maybe</label
+              >
+        
+              <label
+                ><input
+                  name="user-recommend"
+                  value="not-sure"
+                  type="radio"
+                  class="input-radio"
+                />Not sure</label>
+
+              <label>
+              <input
+                  name="user-recommend"
+                  value="not-sure"
+                  type="radio"
+                  class="input-radio"
+                />Not sure</label
+              >
+        </div>
+        <div class="form-group">
+            <label id="date-label" for="date">Please select today's date</label>
+            <input type="date" class="form-control" name="date" id="date">
+        </div>
+        <div class="form-group">
+            <p>Which of these strokes do you prefer?</p>
+            <select id="dropdown" class="form-group" required>
+                <option disabled selected value>Please select your favorite stroke.</option>
+                <option value="forehand">Roger Federer forehand</option>
+                <option value="backhand">Novak Djokovic backhand</option>
+                <option value="volley">Pete Sampras volley</option>
+                <option value="smash">Andy Roddick smash</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Feel free to comment or suggest anything you want below:</p>
+            <textarea
+                name="komentar" id="comment" class="input-textarea" placeholder="Write you comment here..."></textarea>
+        </div>
+        <div>
+            <a href="#" target="_blank"> 
+                <input type="submit" placeholder="Submit" id="submit">
+            </a>
+        </div>  
+    </form>
+</div>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
